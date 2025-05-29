@@ -1,0 +1,89 @@
+🛠️ Tecnologie utilizzate
+Python 3.x: per implementare il server HTTP minimale.
+
+Socket (modulo Python): per la gestione della comunicazione tra client e server.
+
+HTML5/CSS3: per la creazione del sito statico.
+
+Editor di testo: VSCode / Sublime / altro.
+
+
+📂 Struttura del progetto
+bash
+Copia
+Modifica
+progetto/
+│
+├── server.py              # Web server minimale in Python
+└── www/                   # Cartella dei file statici
+    ├── index.html
+    ├── specie.html
+    ├── curiosita.html
+    └── style.css
+🌐 Funzionalità del server
+Ascolta su localhost:8080
+
+Gestisce richieste HTTP di tipo GET
+
+Serve file HTML e CSS dalla cartella www/
+
+Restituisce codice HTTP:
+
+200 OK per file esistenti
+
+404 Not Found per file mancanti
+
+Supporto base ai MIME types (es. text/html, text/css)
+
+Logging minimale su console per ogni richiesta
+
+
+🐢 Descrizione del sito statico
+Il sito è composto da tre pagine:
+
+index.html – Introduzione alle tartarughe e loro habitat.
+
+specie.html – Descrizione di alcune tra le principali specie.
+
+curiosita.html – Curiosità interessanti sulle tartarughe.
+
+Il design è responsive e include:
+
+Layout chiaro con intestazioni e piè di pagina
+
+Navigazione semplice tramite barra in alto
+
+Immagini e testi con focus educativo e divulgativo
+
+File CSS centralizzato (style.css) per lo stile
+
+🔄 Estensioni opzionali implementate
+✅ Supporto a MIME types base
+
+✅ Logging delle richieste sulla console
+
+✅ Layout responsive e colori accessibili
+
+❌ Non è stata implementata la gestione di immagini locali o JavaScript dinamico
+
+📌 Possibili sviluppi futuri
+Aggiunta del supporto POST o form interattivi
+
+Compressione dei contenuti (Gzip)
+
+Logging avanzato su file
+
+Gestione multithread per richieste concorrenti
+
+Hosting su una rete reale con deploy tramite Docker o servizi cloud
+
+
+🧪 Test effettuati
+Richieste valide con browser → ✅ Risposta 200 OK
+
+Richieste a file inesistenti → ✅ Risposta 404 Not Found
+
+Test CSS e responsive su schermi di varie dimensioni → ✅ OK
+
+📎 Conclusioni
+Il progetto ha permesso di comprendere le basi del protocollo HTTP, l’uso dei socket in Python e la logica di funzionamento di un server web statico. L’argomento delle tartarughe è stato scelto per valorizzare la componente divulgativa del sito. Il codice è facilmente estendibile ed è una buona base per server più complessi.
